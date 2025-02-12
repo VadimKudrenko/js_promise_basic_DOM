@@ -25,6 +25,6 @@ const handleError = () => {
 };
 
 promise1.then(handleSuccess);
-promise1.catch('error');
-promise2.then('ok');
+promise1.catch(handleError);
+promise2.then(handleSuccess);
 promise2.catch(handleError);
